@@ -38,4 +38,19 @@ h1 {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .dos-columnas{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* SOPORTE 100% */
+    .entrada-blog{
+    flex: 0 0 calc(50% - 1rem); /*flex-basis: calc(50% - 1rem);*/
+    }
+    /* Primera coordenada "0": factor de crecimiento.
+       Segunda coordenada "0": factor de decrecimiento.
+       Trercera coordenada "calc(50% - 1rem)": tamaño base 
+    */
+
+}
